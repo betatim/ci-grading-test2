@@ -10,7 +10,7 @@ commands:
       - run:
           command: |
             . /tmp/venv/bin/activate
-            papermill << parameters.nb >>.ipynb << parameters.nb >>-graded.ipynb
+            papermill << parameters.nb >>.ipynb  << parameters.nb >>-graded.ipynb
 
 jobs:
   grade:
